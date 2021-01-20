@@ -1,0 +1,355 @@
+/* 清楚元素默认的内外边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f3f5f7;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+}
+
+/* 清除浮动 第一种*/
+/* .clearfix::before,
+.clearfix::after {
+  content:'';
+  display:table;
+}
+
+.clearfix::after{
+  clear:both;
+}
+
+.clearfix::after{
+  *zoom: 1;
+} */
+
+/* 清除浮动 第二种*/
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix::after {
+  *zoom: 1;
+}
+
+a {
+  text-decoration: none;
+}
+/* 版心1200 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 40px;
+  margin: 30px auto;
+}
+
+.logo {
+  float: left;
+  margin-right: 60px;
+}
+
+.nav {
+  float: left;
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav ul li a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 10px;
+  margin-right: 20px;
+  color: #050505;
+  font-size: 18px;
+}
+
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+  float: left;
+  margin-left: 70px;
+}
+
+.search input {
+  float: left;
+  height: 38px;
+  width: 340px;
+  padding-left: 20px;
+  border: 1px solid #00a4ff;
+  border-right: none;
+  color: #cccccc;
+}
+
+.search button {
+  float: left;
+  height: 40px;
+  width: 50px;
+  background: url(images/btn.png) no-repeat;
+}
+
+.user {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.banner {
+  height: 420px;
+  background: #1c036c url(images/banner2.png) no-repeat top center;
+  /*  background-color: #1c036c;
+  background-repeat: no-repeat;
+  background-size: 420px;
+  background-image: url(images/banner2.png); */
+}
+
+.subnav {
+  float: left;
+  padding: 0 20px;
+  width: 150px;
+  height: 420px;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.subnav li {
+  height: 45px;
+  line-height: 45px;
+}
+
+.subnav li a {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.subnav li a:hover {
+  color: #00b4ff;
+}
+.subnav span {
+  float: right;
+}
+
+.course {
+  /* 只有标准流有外边距塌陷问题 -- >如果标准流，子盒子给margin-top，就会有外边距塌陷的问题。但是因为给了子盒子float，就没有外边距塌陷的问题了 */
+  float: right;
+  margin-top: 50px;
+  width: 228px;
+  height: 330px;
+  background-color: #ffffff;
+}
+.courser-hd {
+  height: 48px;
+  background-color: #9bceea;
+  color: #ffffff;
+  line-height: 48px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.couser-bd {
+  /* 没有宽度的盒子，padding不会撑开盒子 */
+  padding: 0 15px;
+}
+
+/* .couser-bd ul {有外边距塌陷的问题
+  margin-top: 10px;
+} */
+
+.couser-bd ul {
+  padding-top: 10px;
+}
+.couser-bd li {
+  /* 行高等于高度，只能让单行文本垂直居中 */
+  height: 50px;
+  margin-top: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.couser-bd li h4 {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+
+.couser-bd li p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.all {
+  display: block;
+  height: 38px;
+  border: 1px solid #00a4ff;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #00a4ff;
+  line-height: 38px;
+  text-align: center;
+}
+
+.all:hover {
+  color: #ffffff;
+  background-color: #00a4ff;
+}
+
+.goods {
+  height: 60px;
+  line-height: 60px; /* 以font-, line-, text-, color的属性，子会继承父的属性 */
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* 盒子阴影 */
+}
+
+.goods h3 {
+  float: left;
+  padding: 0 30px;
+  color: #00a4ff;
+  font-size: 16px;
+}
+
+.goods-item {
+  float: left;
+  color: #bfbfbf;
+}
+
+.goods-item a {
+  margin: 0 30px;
+  font-size: 16px;
+  color: #050505;
+}
+
+.modify {
+  float: right;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #00a4ff;
+}
+
+.box {
+  margin-top: 15px;
+}
+
+.box-hd {
+  height: 60px;
+  line-height: 60px;
+}
+.box-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+  font-weight: 400;
+}
+
+.box-hd a {
+  float: right;
+  margin-right: 30px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.box-bd {
+  /* 这个盒子一定不要给高度，因为我们可能放一行，也可能是2行，或者n行 */
+  /* box-bd 宽度，超过了版心，1200， 子盒子的宽度是可以超过父盒子的*/
+  width: 1215px;
+}
+
+.box-bd li {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 228px;
+  height: 270px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.box-bd li img {
+  width: 100%;
+}
+
+.box-bd li h4 {
+  margin: 20px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: 400;
+}
+.box-bd li p {
+  margin: 20px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.box-bd p span {
+  color: orange;
+}
+
+.footer {
+  height: 385px;
+  padding-top: 30px;
+  background-color: #ffffff;
+}
+
+.copyright {
+  float: left;
+}
+.copyright p {
+  font-size: 12px;
+  color: #666666;
+  margin: 20px 0 15px 0;
+}
+
+.app {
+  display: block;
+  width: 118px;
+  height: 34px;
+  border: 1px solid #00a4ff;
+  text-align: center;
+  line-height: 34px;
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+.app:hover {
+  color: #ffffff;
+  background-color: #00a4ff;
+}
+
+.links{
+  float: right;
+}
+
+.links dl {
+  float: left;
+  margin-left: 100px;
+}
+.links dt{
+  height: 35px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.links dd a{
+  font-size: 12px;
+  color: #333333;
+}
+
+.links dd a:hover{
+  color: #00a4ff;
+}

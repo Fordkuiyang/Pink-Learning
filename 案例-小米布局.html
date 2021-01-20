@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米布局案例</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .container {
+            height: 615px;
+            width: 1226px;
+            margin: 0px auto;
+            background-color: pink;
+        }
+
+        .left {
+            float: left;
+            width: 234px;
+            height: 615px;
+            background-color: purple;
+        }
+
+        .left img{
+            width: 100%;
+        }
+        .right {
+            float: right;
+            width: 992px;
+            height: 615px;
+            background-color: skyblue;
+        }
+
+        .right li {
+            float: left;
+            width: 234px;
+            height: 300px;
+            margin-left: 14px;
+            margin-bottom: 14px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="images/xiaomi.jpeg" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#"><img src="images/xiaomi_mobile1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/xiaomi_mobile2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/xiaomi_mobile3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/xiaomi_mobile4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/xiaomi_mobile5.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/xiaomi_mobile6.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/xiaomi_mobile7.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/xiaomi_mobile8.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

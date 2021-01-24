@@ -113,6 +113,10 @@ a {
   color: #666666;
 }
 
+.user img{
+  vertical-align: middle;
+}
+
 .banner {
   height: 420px;
   background: #1c036c url(images/banner2.png) no-repeat top center;
@@ -265,6 +269,7 @@ a {
   color: #a5a5a5;
 }
 
+
 .box-bd {
   /* 这个盒子一定不要给高度，因为我们可能放一行，也可能是2行，或者n行 */
   /* box-bd 宽度，超过了版心，1200， 子盒子的宽度是可以超过父盒子的*/
@@ -272,12 +277,20 @@ a {
 }
 
 .box-bd li {
+  position: relative;
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
   width: 228px;
   height: 270px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.box-bd .hot {
+  position: absolute;
+  top:0;
+  right: -4px;
+  width: 40px;
 }
 
 .box-bd li img {
@@ -331,7 +344,7 @@ a {
   background-color: #00a4ff;
 }
 
-.links{
+.links {
   float: right;
 }
 
@@ -339,17 +352,28 @@ a {
   float: left;
   margin-left: 100px;
 }
-.links dt{
+.links dt {
   height: 35px;
   font-size: 16px;
   color: #333333;
 }
 
-.links dd a{
+.links dd a {
   font-size: 12px;
   color: #333333;
 }
 
-.links dd a:hover{
+.links dd a:hover {
   color: #00a4ff;
+}
+
+.fixbar{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -790px;
+  width: 180px;
+  height: 420px;
+  background-color: pink;
+  z-index: 99999;
 }

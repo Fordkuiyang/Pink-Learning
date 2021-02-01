@@ -1,0 +1,174 @@
+/* 这个放入首页的css */
+
+.main {
+  width: 980px;
+  height: 455px;
+  margin-top: 5px;
+  margin-left: 219px;
+}
+
+.focus {
+  position: relative;
+  width: 720px;
+  height: 455px;
+}
+
+.arrow-l,
+.arrow-r {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 24px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "icomoon";
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.arrow-l {
+  left: 0;
+}
+
+.arrow-r {
+  right: 0;
+}
+
+.circle {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+}
+
+.circle li {
+  float: left;
+  /* padding: 0px 5px; */
+  margin: 0 5px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.newsflash {
+  width: 250px;
+  height: 455px;
+}
+
+.news {
+  height: 163px;
+  border: 1px solid #ccc;
+}
+
+.news_hd {
+  height: 32px;
+  border-bottom: 1px dotted #ccc;
+  font-size: 14px;
+  line-height: 32px;
+  padding-left: 15px;
+}
+
+.news_hd a {
+  float: right;
+  font-family: "icomoon";
+  font-size: 12px;
+  margin-right: 5px;
+}
+.news_bd {
+  padding: 10px 0 0 15px;
+}
+
+.news_bd li {
+  height: 23px;
+}
+.lifeservice {
+  overflow: hidden;
+  height: 208px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.lifeservice ul {
+  width: 252px;
+}
+.lifeservice li {
+  float: left;
+  width: 62px;
+  height: 70px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.lifeservice li a {
+  display: block;
+  overflow: hidden; /* 解决i一起的外边距塌陷问题 */
+  height: 100%;
+}
+
+.lifeservice li P {
+  text-align: center;
+}
+
+.service_ico {
+  display: block;
+  margin: 10px auto;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icons.png) no-repeat;
+}
+
+.service_ico_huafei {
+  background-position: -17px -16px;
+}
+
+.service_ico_feiji {
+  width: 26px;
+  background-position: -78px -16px;
+}
+.bargin {
+  height: 75px;
+  margin-top: 5px;
+}
+
+.recomment {
+  height: 163px;
+  margin-top: 10px;
+  background-color: pink;
+}
+.recomment-hd {
+  width: 200px;
+  height: 163px;
+  background-color: #5c5251;
+  text-align: center;
+}
+
+.recomment-hd img {
+  margin: 30px 0 10px 0;
+}
+
+.recomment-bd {
+  width: 1000px;
+  height: 163px;
+  background-color: #ebebeb;
+}
+
+.recomment-bd li {
+  float: left;
+  width: 249px;
+  height: 145px;
+  margin-top: 10px;
+  border-right: 1px solid #ccc;
+}
+.recomment-bd li img {
+  height: 100%;
+}
+
+.recomment-bd .last {
+  border-right: 0;
+}

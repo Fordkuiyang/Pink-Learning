@@ -139,7 +139,6 @@
 .recomment {
   height: 163px;
   margin-top: 10px;
-  background-color: pink;
 }
 .recomment-hd {
   width: 200px;
@@ -172,3 +171,98 @@
 .recomment-bd .last {
   border-right: 0;
 }
+
+/* floor 楼层区 start*/
+
+.box-hd {
+  margin-top: 25px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+  float: left;
+  font-size: 18px;
+  color: #c81623;
+}
+.tab-list {
+  float: right;
+  line-height: 30px;
+}
+
+.tab-list li {
+  float: left;
+}
+
+.tab-list li a {
+  margin: 0 15px;
+}
+
+.box-bd {
+  height: 360px;
+}
+
+.w209 {
+  width: 209px;
+  background-color: #f9f9f9;
+}
+.w219 {
+  width: 219px;
+  border-right: 1px solid #ccc;
+}
+.w220 {
+  width: 220px;
+  border-right: 1px solid #ccc;
+}
+.w329 {
+  width: 329px;
+}
+
+.tab-content li {
+  float: left;
+  height: 360px;
+}
+
+.tab-con-item {
+  border-bottom: 1px solid #ccc;
+}
+.tab-con-list {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.tab-con-list li {
+  margin-left: 10px;
+  width: 86px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+/* floor 楼层区 end*/
+
+/* 固定电梯导航 start */
+.fixedtool {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -676px;
+  width: 66px;
+  background-color: #fff;
+}
+
+.fixedtool li{
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.fixedtool .current {
+  background-color: #c81623;
+  color: #fff;
+}
+/* 固定电梯导航 end */

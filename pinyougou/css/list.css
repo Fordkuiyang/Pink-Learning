@@ -1,0 +1,44 @@
+.sk {
+  position: absolute;
+  top: 40px;
+  left: 185px;
+  padding: 5px 0 0 15px;
+  height: 32px;
+  border-left: 1px solid #b1191a;
+}
+
+.sk_list li {
+  float: left;
+  line-height: 45px;
+  margin: 0 30px;
+}
+.sk_list li a {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.sk_list li a:hover {
+  color: #c81523;
+}
+
+.sk_con li {
+  float: left;
+  line-height: 45px;
+  margin: 0 20px;
+}
+
+.sk_con li a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sk_bd {
+  margin-top: 20px;
+}
+/* 列表页内容区域 */
+.sk_goods {
+  width: 288px;
+  height: 458px;
+  border: 1px solid #e12228;
+}

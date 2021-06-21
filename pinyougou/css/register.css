@@ -28,7 +28,7 @@
   font-size: 18px;
 }
 
-.registerarea em {
+.registerarea h3 em {
   float: right;
   font-size: 14px;
 }
@@ -53,9 +53,10 @@
   text-align: right;
 }
 
-.reg_form input {
-  width: 238px;
+.input_item {
+  width: 228px;
   height: 34px;
+  padding-left: 10px;
   margin-left: 10px;
   border: 1px solid #ccc;
 }
@@ -81,4 +82,62 @@
 
 .success_icon {
   background: url(../img/success.png) no-repeat;
+}
+
+.safe {
+  padding-left: 186px;
+  color: #b2b2b2;
+}
+
+.safe em {
+  padding: 0 12px;
+  color: #fff;
+}
+
+.ruo {
+  background-color: #de1111;
+}
+.zhong {
+  background-color: #40b83f;
+}
+
+.qiang {
+  background-color: #f79100;
+}
+
+.agree {
+  padding-top: 20px;
+  padding-left: 114px;
+}
+
+.agree input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.agree a {
+  color: #1ba1e6;
+}
+
+.over {
+  margin: 30px 0 0 130px;
+  width: 200px;
+  height: 34px;
+  background-color: #c81623;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+}
+
+.footer {
+  height: 120px;
+  text-align: center;
+}
+
+.links {
+  margin-top: 20px;
+  height: 30px;
+}
+.copyright {
+  line-height: 20px;
 }
